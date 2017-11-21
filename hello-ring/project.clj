@@ -6,4 +6,7 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                 [ring/ring-core "1.2.1"]
                 [ring/ring-jetty-adapter "1.2.1"]]
+  :plugins [[lein-ring "0.8.8"]
+            [compojure "1.1.6"]]  
+  :ring {:handler hello-ring.core2/handler}                      
   :main hello-ring.core)
